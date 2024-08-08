@@ -1,8 +1,8 @@
-# AI-Powered CRM and Chat Application
+# AI-Powered Chat Application
 
 ## Overview
 
-This project is an AI-powered CRM (Customer Relationship Management) and Chat application. It leverages advanced language models and vector databases to provide intelligent document management, search capabilities, and interactive chat functionalities.
+This project is an AI-powered Chat application. It leverages advanced language models and vector databases to provide intelligent document management, search capabilities, and interactive chat functionalities.
 
 ## Features
 
@@ -23,18 +23,17 @@ This project is an AI-powered CRM (Customer Relationship Management) and Chat ap
 ### Prerequisites
 
 - Docker and Docker Compose
-- Python 3.8+
+- Python 3.11
 
 ### Installation
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/filipeth/chat-ollama
+   cd chat-ollama
    ```
 
 2. Set up environment variables:
-   - Copy `dev.env` to `.env`
    - Modify `.env` with your specific configurations
 
 3. Build and run the Docker containers:
@@ -42,13 +41,13 @@ This project is an AI-powered CRM (Customer Relationship Management) and Chat ap
    docker-compose up --build
    ```
 
-4. Access the application at `http://localhost:8000`
+4. Access the application at `http://localhost:8777`
 
 ## API Documentation
 
 Once the application is running, you can access the API documentation at:
-- Swagger UI: `http://localhost:8000/docs`
-- ReDoc: `http://localhost:8000/redoc`
+- Swagger UI: `http://localhost:8777/docs`
+- ReDoc: `http://localhost:8777/redoc`
 
 ## Development
 
@@ -69,24 +68,3 @@ To set up a development environment:
    ```
    uvicorn main:app --reload
    ```
-
-## Testing
-
-To run tests:
-
-```
-pytest
-```
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-- Thanks to all contributors and maintainers of the open-source libraries used in this project.
-- Special thanks to the AI and ML community for their continuous innovations.
